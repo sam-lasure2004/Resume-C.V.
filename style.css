@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Poppins', sans-serif;
+}
+
+body{
+    background:  lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    background: white;
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    box-shadow: 0 35px 35px rgba(0,0,0,0,1) ;
+
+
+}
+.container .left_side{
+    position: relative;
+background: #003147;    /***from  image  to last hole block  ***/
+padding: 40px;
+
+}
+
+.profiletext{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+padding-bottom: 20px;
+border-bottom: 1px solid rgb(255,255,255,0.2);   /**** below name line  ***/
+}
+
+.profiletext .image{
+    position: relative;
+    width: 200px;
+    height: 240px;   /** image block ***/
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.profiletext .image .img-1{
+    position: absolute;
+    top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+
+.profiletext h1{
+    color: black;  /** name surname ***/
+    font-size: 1.30em;
+    height: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.3em;
+}
+
+
+.profiletext h1 span{
+
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.contactinfo{
+    padding-top: 40px;
+
+}
+
+
+.title{
+    color: #fff;  /*** title block **/
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;   /***  gives space between the letter which w ehave given in our page for only that section **/
+margin-bottom: 20px;
+}
+
+.contactinfo ul{
+    position: relative;
+
+}
+
+.contactinfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+
+}
+
+.contactinfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: aqua;
+
+}
+
+.contactinfo ul li span{
+color: aquamarine;
+font-weight: 400;    /*** font weight means the word it makes more darkner how much we want we can make **/
+
+}
+
+
+.contactinfo.education li{
+margin-bottom: 15px;
+
+}
+
+.contactinfo.education h5{
+    color: aqua;  /** year **/
+    font-weight: 500;
+}
+
+
+.contactinfo.education h4:nth-child(2){
+        color: white;   /** degree **/
+    font-weight: 500;
+
+}
+
+.contactinfo.education h4{
+    color: white;   /*** university name **/
+    font-weight: 300;
+    
+}
+
+.contactinfo.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: black;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactinfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:  linear-gradient(to right,orange, yellow);
+}
+
+
+
+
+.container .right_side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+    
+}
+
+.about{
+    margin-bottom: 50px;
+
+}
+
+.about:last-child{
+    margin-bottom: 0;
+
+}
+
+.title2{
+    color: #003147;  /*** #003147 **/
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: #333;
+
+}
+
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+
+}
+
+.about .box .year_company{
+    min-width: 150px;
+}
+
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #000000e5;         /** #848c90 **/
+    font-weight: 600;
+
+}
+
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4{
+    text-transform: uppercase;
+    color: #070707e3;     /** #848c99 **/
+    font-weight: 500;
+
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #555454;    /*** #f0f0f0  **/
+
+}
+
+.skills .box .percent div{
+position: absolute;
+top: 0;
+left: 00;
+height: 100%;
+background: linear-gradient(to right,rgb(230, 12, 230), rgb(0, 153, 255) );    /** #03a9f4  **/
+
+}
+
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.interest ul li{
+    list-style: none;
+     color: #333;    /** #333  * */
+    font-weight: 500;
+    margin: 10px, 0;
+}
+
+.interest ul li .fa{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 30px;
+}
+
+@media (max-width : 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(2, 1fr);      /** interest block 2*1  **/
+
+}
+}
+
+@media (max-width : 600px){
+        .about .box{
+            flex-direction: column;         /*** year_company**/
+        }
+.about .box .year_company{
+    min-width: 150px;
+    margin-bottom: 5px;
+}
+.interest ul{
+    grid-template-columns: repeat(1, 1fr);      /** interest block 2*1  **/
+
+}
+.skills .box{
+    grid-template-columns: repeat(1, 1fr);
+}
+}
